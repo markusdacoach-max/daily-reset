@@ -17,13 +17,17 @@
             mono: ['"Space Grotesk"', 'monospace'],
           },
           colors: {
-            brand: {
-              mint: '#00F090',
-              cyan: '#00D2FF',
-              dark: '#0B0D12',
-              card: '#121620',
-              border: '#1F2636',
-              muted: '#8A94A6'
+            guide: {
+              cream: '#F8F3EA',
+              ivory: '#FFFDF9',
+              pine: '#1E4938',
+              pinedark: '#153629',
+              pinelight: '#295E49',
+              rust: '#B26A48',
+              rustlight: '#C77D59',
+              earth: '#24201D',
+              border: '#E4D8C5',
+              muted: '#756D63'
             }
           }
         }
@@ -32,34 +36,31 @@
   </script>
   <style>
     body {
-      background-color: #0B0D12;
-      color: #F3F4F6;
+      background-color: #F8F3EA;
+      color: #24201D;
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    .glow-mint {
-      box-shadow: 0 0 35px -5px rgba(0, 240, 144, 0.25);
-    }
-    .glow-subtle {
-      box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.7);
+    .shadow-guide {
+      box-shadow: 0 10px 30px -5px rgba(50, 40, 30, 0.07);
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-brand-mint selection:text-black">
+<body class="min-h-screen flex flex-col justify-between selection:bg-guide-pine selection:text-white">
 
   <!-- Header -->
-  <header class="border-b border-brand-border/60 bg-[#0B0D12]/80 backdrop-blur sticky top-0 z-50">
+  <header class="border-b border-guide-border/80 bg-[#F8F3EA]/90 backdrop-blur sticky top-0 z-50">
     <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
       <div class="flex items-center space-x-2.5">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-mint to-brand-cyan flex items-center justify-center text-black font-bold text-sm tracking-tighter">
+        <div class="w-8 h-8 rounded-lg bg-guide-pine flex items-center justify-center text-white font-bold text-sm tracking-tighter shadow-sm">
           MD
         </div>
-        <span class="font-mono font-bold tracking-tight text-white text-base">MARKUS <span class="text-brand-mint">DA COACH</span></span>
+        <span class="font-mono font-bold tracking-tight text-guide-earth text-base">MARKUS <span class="text-guide-pine">DA COACH</span></span>
       </div>
       <div class="flex items-center space-x-3 text-xs font-semibold">
-        <a href="https://linktr.ee/markusdacoach" target="_blank" rel="noopener noreferrer" class="text-brand-muted hover:text-white transition px-2.5 py-1.5 rounded-md hover:bg-white/5">
+        <a href="https://linktr.ee/markusdacoach" target="_blank" rel="noopener noreferrer" class="text-guide-muted hover:text-guide-earth transition px-2.5 py-1.5 rounded-md hover:bg-black/5">
           Linktree Hub ↗
         </a>
-        <a href="https://tr.ee/DudeWorkB" target="_blank" rel="noopener noreferrer" class="text-brand-mint bg-brand-mint/10 border border-brand-mint/30 px-3 py-1.5 rounded-lg hover:bg-brand-mint/20 transition">
+        <a href="https://tr.ee/DudeWorkB" target="_blank" rel="noopener noreferrer" class="text-guide-pine bg-guide-pine/10 border border-guide-pine/30 px-3 py-1.5 rounded-lg hover:bg-guide-pine/20 transition font-mono">
           Workbook ($7.99)
         </a>
       </div>
@@ -73,52 +74,52 @@
       <!-- ================= OPT-IN VIEW (VIEW 1) ================= -->
       <section id="optin-view" class="transition-all duration-300">
         
-        <!-- Hero Badge -->
+        <!-- Hero Badge & Title matching the PDF Guide -->
         <div class="text-center mb-6">
-          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-mint/10 border border-brand-mint/30 text-brand-mint text-xs font-mono font-bold uppercase tracking-wider mb-4">
-            <span class="w-2 h-2 rounded-full bg-brand-mint animate-ping"></span>
-            <span>Free Tactical Field Guide</span>
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-guide-pine/10 border border-guide-pine/25 text-guide-pine text-xs font-mono font-bold uppercase tracking-wider mb-3">
+            <span class="w-2 h-2 rounded-full bg-guide-pine"></span>
+            <span>The Modern Dude • Quick Action Field Guide</span>
           </div>
-          <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-3">
-            Stop Running on <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-mint to-brand-cyan">Factory Software.</span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-guide-pine tracking-tight leading-tight mb-2">
+            The Daily Reset Protocol
           </h1>
-          <p class="text-brand-muted text-sm sm:text-base leading-relaxed max-w-lg mx-auto">
-            A 1-page manual override to shut down adrenalized survival mode, disarm hesitation, and reclaim self-trust in under 90 seconds.
+          <p class="text-guide-muted italic font-medium text-sm sm:text-base max-w-md mx-auto">
+            3 Micro-Overrides to Disarm Survival Mode and Reclaim Operational Self-Trust
           </p>
         </div>
 
-        <!-- Opt-in Card -->
-        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-8 glow-subtle">
+        <!-- Opt-in Card (Field Guide Style) -->
+        <div class="bg-guide-ivory border-2 border-guide-border rounded-2xl p-6 sm:p-8 shadow-guide">
           
-          <!-- Key Protocols Breakdown -->
+          <!-- Key Protocols Breakdown styled like the PDF boxes -->
           <div class="space-y-3 mb-6">
-            <div class="flex items-start space-x-3 p-3 rounded-xl bg-white/[0.02] border border-brand-border/40">
-              <span class="flex-shrink-0 w-6 h-6 rounded-md bg-brand-mint/10 text-brand-mint flex items-center justify-center text-xs font-bold font-mono">1</span>
+            <div class="flex items-start space-x-3.5 p-3.5 rounded-xl bg-[#F8F3EA]/70 border border-guide-border/70">
+              <span class="flex-shrink-0 w-7 h-7 rounded-md bg-guide-pine text-white flex items-center justify-center text-xs font-bold font-mono shadow-sm">1</span>
               <div>
-                <h2 class="text-xs font-bold text-white uppercase tracking-wider">The 4-4-4 Box Breathing Kill Switch</h2>
-                <p class="text-xs text-brand-muted mt-0.5">Mechanically disarms adrenaline and resets your nervous system in 90 seconds.</p>
+                <h2 class="text-xs font-bold text-guide-earth uppercase tracking-wider">Protocol 1: The 4-4-4 Box Breathing Kill Switch</h2>
+                <p class="text-xs text-guide-muted mt-0.5 leading-relaxed">Mechanically interrupts adrenaline surges and activates parasympathetic recovery in under 90 seconds.</p>
               </div>
             </div>
 
-            <div class="flex items-start space-x-3 p-3 rounded-xl bg-white/[0.02] border border-brand-border/40">
-              <span class="flex-shrink-0 w-6 h-6 rounded-md bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xs font-bold font-mono">2</span>
+            <div class="flex items-start space-x-3.5 p-3.5 rounded-xl bg-[#F8F3EA]/70 border border-guide-border/70">
+              <span class="flex-shrink-0 w-7 h-7 rounded-md bg-guide-pine text-white flex items-center justify-center text-xs font-bold font-mono shadow-sm">2</span>
               <div>
-                <h2 class="text-xs font-bold text-white uppercase tracking-wider">The 3-Second Override</h2>
-                <p class="text-xs text-brand-muted mt-0.5">3… 2… 1… MOVE. Stare down the physical hesitation before your mind rationalizes retreat.</p>
+                <h2 class="text-xs font-bold text-guide-earth uppercase tracking-wider">Protocol 2: The 3-Second Override (The Flinch)</h2>
+                <p class="text-xs text-guide-muted mt-0.5 leading-relaxed">3… 2… 1… MOVE. Execute movement immediately before your old programming rationalizes retreat.</p>
               </div>
             </div>
 
-            <div class="flex items-start space-x-3 p-3 rounded-xl bg-white/[0.02] border border-brand-border/40">
-              <span class="flex-shrink-0 w-6 h-6 rounded-md bg-purple-400/10 text-purple-400 flex items-center justify-center text-xs font-bold font-mono">3</span>
+            <div class="flex items-start space-x-3.5 p-3.5 rounded-xl bg-[#F8F3EA]/70 border border-guide-border/70">
+              <span class="flex-shrink-0 w-7 h-7 rounded-md bg-guide-pine text-white flex items-center justify-center text-xs font-bold font-mono shadow-sm">3</span>
               <div>
-                <h2 class="text-xs font-bold text-white uppercase tracking-wider">The 60/40 Primal Balance Audit</h2>
-                <p class="text-xs text-brand-muted mt-0.5">Consciously allocate between Hunter drive (60%) and Healer presence (40%) daily.</p>
+                <h2 class="text-xs font-bold text-guide-earth uppercase tracking-wider">Protocol 3: The 60/40 Primal Balance Daily Audit</h2>
+                <p class="text-xs text-guide-muted mt-0.5 leading-relaxed">Consciously allocate daily between Hunter drive (60% action/protection) and Healer presence (40% connection).</p>
               </div>
             </div>
           </div>
 
           <!-- Form -->
-          <form id="lead-form" class="space-y-3">
+          <form id="lead-form" class="space-y-3.5">
             <div>
               <label for="email" class="sr-only">Your Email Address</label>
               <input 
@@ -126,24 +127,24 @@
                 id="email" 
                 name="email" 
                 required 
-                placeholder="Enter your best email address..." 
+                placeholder="Enter your email for the guide..." 
                 autocomplete="email"
-                class="w-full bg-[#0B0D12] border border-brand-border rounded-xl px-4 py-3.5 text-white text-sm placeholder:text-brand-muted/70 focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint transition"
+                class="w-full bg-[#F8F3EA]/60 border-2 border-guide-border rounded-xl px-4 py-3.5 text-guide-earth text-sm placeholder:text-guide-muted/70 focus:outline-none focus:border-guide-pine focus:bg-white transition"
               >
             </div>
             
             <button 
               type="submit" 
               id="submit-btn"
-              class="w-full bg-brand-mint hover:bg-[#00d880] text-black font-extrabold text-sm py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center space-x-2 glow-mint active:scale-[0.99]"
+              class="w-full bg-guide-pine hover:bg-guide-pinedark text-white font-extrabold text-sm py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center space-x-2 shadow-md active:scale-[0.99]"
             >
               <span>GET INSTANT ACCESS</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </button>
           </form>
 
-          <p class="text-[11px] text-center text-brand-muted mt-3">
-            Instant digital access. No fluff, no 20-page sales pitch. Unsubscribe anytime.
+          <p class="text-[11px] text-center text-guide-muted mt-3">
+            Instant digital access to printable PDF & high-res field guide. No spam, ever.
           </p>
         </div>
 
@@ -154,26 +155,26 @@
         
         <!-- Success Banner -->
         <div class="text-center mb-6">
-          <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-brand-mint/10 border border-brand-mint/30 text-brand-mint text-xs font-mono font-bold mb-3">
+          <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-guide-pine/10 border border-guide-pine/30 text-guide-pine text-xs font-mono font-bold mb-3">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-            <span>PROTOCOL ACCESS UNLOCKED</span>
+            <span>FIELD GUIDE ACCESS UNLOCKED</span>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-guide-pine tracking-tight">
             You're In. Take A Breath.
           </h2>
-          <p class="text-brand-muted text-xs sm:text-sm mt-1">
-            Access your 1-page guide below or run the 90-second reset tool directly on this page.
+          <p class="text-guide-muted text-xs sm:text-sm mt-1">
+            Download your official 1-page guide below or test the live breathing drill right on this screen.
           </p>
         </div>
 
         <!-- Primary Download Card -->
-        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-7 glow-subtle mb-5">
-          <div class="flex items-center justify-between pb-4 border-b border-brand-border/60">
+        <div class="bg-guide-ivory border-2 border-guide-border rounded-2xl p-6 sm:p-7 shadow-guide mb-5">
+          <div class="flex items-center justify-between pb-4 border-b border-guide-border/70">
             <div>
-              <span class="text-[11px] font-mono text-brand-mint font-bold uppercase tracking-wider">Lead Magnet Asset</span>
-              <h3 class="text-base font-bold text-white">The Daily Reset Protocol (1-Page Field Guide)</h3>
+              <span class="text-[11px] font-mono text-guide-rust font-bold uppercase tracking-wider">Field Guide Asset</span>
+              <h3 class="text-base font-bold text-guide-earth">The Daily Reset Protocol (Printable Guide)</h3>
             </div>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-brand-border text-[11px] font-mono text-brand-muted">PDF / High-Res</span>
+            <span class="px-2.5 py-1 rounded bg-guide-cream border border-guide-border text-[11px] font-mono text-guide-muted">PDF / High-Res</span>
           </div>
 
           <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -181,7 +182,7 @@
               href="https://drive.google.com/file/d/1heyxQ2jYwS2gkJhNDHaJBbldUS7oiirA/view?usp=drivesdk" 
               target="_blank" 
               rel="noopener noreferrer" 
-              class="bg-brand-mint text-black hover:bg-[#00d880] text-center font-bold text-xs py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2"
+              class="bg-guide-pine text-white hover:bg-guide-pinedark text-center font-bold text-xs py-3.5 px-4 rounded-xl transition flex items-center justify-center space-x-2 shadow-sm"
             >
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
               <span>Download PDF Guide</span>
@@ -191,70 +192,70 @@
               href="https://drive.google.com/file/d/1CQ-zCz3eeLCXCNezSWurnPt00km-uYmg/view?usp=drivesdk" 
               target="_blank" 
               rel="noopener noreferrer" 
-              class="bg-white/5 hover:bg-white/10 text-white border border-brand-border text-center font-semibold text-xs py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2"
+              class="bg-guide-cream hover:bg-[#F2E8D8] text-guide-earth border-2 border-guide-border text-center font-semibold text-xs py-3.5 px-4 rounded-xl transition flex items-center justify-center space-x-2"
             >
-              <svg class="w-4 h-4 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              <svg class="w-4 h-4 text-guide-rust" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
               <span>View Image Version</span>
             </a>
           </div>
         </div>
 
-        <!-- Interactive 4-4-4 Box Breathing Widget -->
-        <div class="bg-brand-card/70 border border-brand-border/80 rounded-2xl p-6 text-center mb-5">
+        <!-- Interactive 4-4-4 Box Breathing Widget (Field Guide Theme) -->
+        <div class="bg-guide-ivory border-2 border-guide-border rounded-2xl p-6 text-center mb-5 shadow-guide">
           <div class="flex items-center justify-between mb-4">
-            <span class="text-xs font-mono uppercase text-brand-muted tracking-wider">Protocol 1 Live Drill</span>
-            <span class="text-xs font-mono text-brand-cyan" id="cycle-count">Cycle: 0 / 4</span>
+            <span class="text-xs font-mono uppercase text-guide-rust font-bold tracking-wider">Protocol 1 Live Drill</span>
+            <span class="text-xs font-mono font-bold text-guide-pine" id="cycle-count">Cycle: 0 / 4</span>
           </div>
 
           <!-- Animated Circle Indicator -->
           <div class="relative w-36 h-36 mx-auto my-2 flex items-center justify-center">
-            <div id="breathe-ring" class="absolute inset-0 rounded-full border-2 border-brand-mint/30 scale-100 transition-transform duration-1000"></div>
-            <div id="breathe-core" class="w-24 h-24 rounded-full bg-brand-mint/10 border border-brand-mint/40 flex flex-col items-center justify-center transition-all duration-1000">
-              <span id="breathe-phase" class="text-xs font-mono font-bold text-brand-mint uppercase tracking-wider">Ready</span>
-              <span id="breathe-timer" class="text-xl font-mono font-extrabold text-white">4s</span>
+            <div id="breathe-ring" class="absolute inset-0 rounded-full border-2 border-guide-pine/25 scale-100 transition-transform duration-1000"></div>
+            <div id="breathe-core" class="w-24 h-24 rounded-full bg-guide-pine/10 border-2 border-guide-pine/40 flex flex-col items-center justify-center transition-all duration-1000">
+              <span id="breathe-phase" class="text-xs font-mono font-bold text-guide-pine uppercase tracking-wider">Ready</span>
+              <span id="breathe-timer" class="text-xl font-mono font-extrabold text-guide-earth">4s</span>
             </div>
           </div>
 
-          <p id="breathe-instruction" class="text-xs text-brand-muted mt-3 mb-4">
+          <p id="breathe-instruction" class="text-xs text-guide-muted mt-3 mb-4 max-w-sm mx-auto">
             Drop your shoulders, unclamp your jaw, and let the counter pace your breath.
           </p>
 
           <button 
             type="button" 
             id="start-breath-btn"
-            class="px-5 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-brand-border text-xs font-bold text-white transition tracking-wider uppercase font-mono"
+            class="px-5 py-2.5 rounded-lg bg-guide-pine hover:bg-guide-pinedark text-xs font-bold text-white transition tracking-wider uppercase font-mono shadow-sm"
           >
             Start 4-4-4 Drill
           </button>
         </div>
 
-        <!-- The $7.99 Micro-Offer Bridge -->
-        <div class="relative overflow-hidden bg-gradient-to-br from-[#151B28] to-[#121620] border-2 border-brand-mint/40 rounded-2xl p-6 sm:p-7 glow-subtle">
+        <!-- The $7.99 Micro-Offer Bridge (Field Guide Themed) -->
+        <div class="relative overflow-hidden bg-guide-ivory border-2 border-guide-rust/50 rounded-2xl p-6 sm:p-7 shadow-guide">
           <div class="absolute top-3 right-3">
-            <span class="px-2.5 py-1 rounded-full bg-brand-mint text-black font-extrabold text-[10px] uppercase font-mono tracking-wider">
+            <span class="px-2.5 py-1 rounded-full bg-guide-rust text-white font-extrabold text-[10px] uppercase font-mono tracking-wider shadow-sm">
               Micro-Offer • $7.99
             </span>
           </div>
 
-          <span class="text-xs font-mono uppercase text-brand-cyan tracking-wider font-bold">The Next Evolution</span>
-          <h3 class="text-xl font-extrabold text-white mt-1 mb-2">
+          <span class="text-xs font-mono uppercase text-guide-rust tracking-wider font-bold">The Next Evolution</span>
+          <h3 class="text-xl font-extrabold text-guide-earth mt-1 mb-2">
             The Code of the Modern Dude Workbook
           </h3>
-          <p class="text-xs text-brand-muted leading-relaxed mb-4">
+          <p class="text-xs text-guide-muted leading-relaxed mb-4">
             Stopping survival mode is only step one. The full 10-step interactive field guide tears down outdated 1930s rules, locks in boundaries, and builds permanent operational self-trust.
           </p>
 
-          <div class="space-y-2 mb-5 text-xs text-gray-300">
+          <div class="space-y-2 mb-5 text-xs text-guide-earth">
             <div class="flex items-center space-x-2">
-              <svg class="w-4 h-4 text-brand-mint flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <svg class="w-4 h-4 text-guide-pine flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
               <span>10-Step interactive game board & habit checklists</span>
             </div>
             <div class="flex items-center space-x-2">
-              <svg class="w-4 h-4 text-brand-mint flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <svg class="w-4 h-4 text-guide-pine flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
               <span>The 3-Second Rule & Arena tape scorecard</span>
             </div>
             <div class="flex items-center space-x-2">
-              <svg class="w-4 h-4 text-brand-mint flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <svg class="w-4 h-4 text-guide-pine flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
               <span>The 66-Day Habit & Daily Fuel architecture</span>
             </div>
           </div>
@@ -263,7 +264,7 @@
             href="https://tr.ee/DudeWorkB" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="w-full bg-brand-mint hover:bg-[#00d880] text-black font-extrabold text-sm py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center space-x-2 text-center"
+            class="w-full bg-guide-rust hover:bg-guide-rustlight text-white font-extrabold text-sm py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center space-x-2 text-center shadow-md"
           >
             <span>UNLOCK THE WORKBOOK ($7.99)</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -274,7 +275,7 @@
           <button 
             type="button" 
             id="back-to-optin-btn"
-            class="text-xs text-brand-muted hover:text-white transition font-mono underline"
+            class="text-xs text-guide-muted hover:text-guide-earth transition font-mono underline"
           >
             ← Back to main overview
           </button>
@@ -286,13 +287,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-brand-border/60 py-6 text-center text-xs text-brand-muted px-4">
+  <footer class="border-t border-guide-border/80 py-6 text-center text-xs text-guide-muted px-4 bg-[#F2EBDE]">
     <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      <span>© 2026 Markus Da Coach. Do the work in private. Go play in public.</span>
+      <span class="text-guide-earth font-medium">© 2026 Markus Da Coach. Do the work in private. Go play in public.</span>
       <div class="flex items-center space-x-4 font-mono text-[11px]">
-        <a href="https://linktr.ee/markusdacoach" target="_blank" rel="noopener noreferrer" class="hover:text-brand-mint transition">Hub</a>
-        <a href="mailto:markusdacoach@gmail.com" class="hover:text-brand-mint transition">Contact</a>
-        <a href="https://tr.ee/DudeWorkB" target="_blank" rel="noopener noreferrer" class="hover:text-brand-mint transition">Workbook ($7.99)</a>
+        <a href="https://linktr.ee/markusdacoach" target="_blank" rel="noopener noreferrer" class="hover:text-guide-pine transition">Hub</a>
+        <a href="mailto:markusdacoach@gmail.com" class="hover:text-guide-pine transition">Contact</a>
+        <a href="https://tr.ee/DudeWorkB" target="_blank" rel="noopener noreferrer" class="hover:text-guide-rust transition font-bold">Workbook ($7.99)</a>
       </div>
     </div>
   </footer>
@@ -350,7 +351,6 @@
         localStorage.setItem('md_lead_email', email);
       } catch (err) {}
 
-      // Simulate quick secure transition
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<span>GET INSTANT ACCESS</span>';
@@ -370,10 +370,10 @@
     let cycle = 1;
 
     const phases = [
-      { name: 'INHALE', instruction: 'Breathe deeply into your lower ribs through the nose.', scale: 'scale-125', color: '#00F090' },
-      { name: 'HOLD FULL', instruction: 'Suspend breath with an open throat. Unclamp the jaw.', scale: 'scale-125', color: '#00D2FF' },
-      { name: 'EXHALE', instruction: 'Release breath steadily and smoothly through relaxed lips.', scale: 'scale-90', color: '#8A94A6' },
-      { name: 'HOLD EMPTY', instruction: 'Rest in absolute stillness before the next inhale.', scale: 'scale-90', color: '#4A5568' }
+      { name: 'INHALE', instruction: 'Breathe deeply into your lower ribs through the nose.', scale: 'scale-125', color: '#1E4938' },
+      { name: 'HOLD FULL', instruction: 'Suspend breath with an open throat. Unclamp the jaw.', scale: 'scale-125', color: '#B26A48' },
+      { name: 'EXHALE', instruction: 'Release breath steadily and smoothly through relaxed lips.', scale: 'scale-90', color: '#756D63' },
+      { name: 'HOLD EMPTY', instruction: 'Rest in absolute stillness before the next inhale.', scale: 'scale-90', color: '#24201D' }
     ];
 
     function stopBreathing() {
@@ -382,8 +382,8 @@
       startBreathBtn.textContent = 'START 4-4-4 DRILL';
       breathePhase.textContent = 'READY';
       breatheTimer.textContent = '4s';
-      breatheRing.className = 'absolute inset-0 rounded-full border-2 border-brand-mint/30 scale-100 transition-transform duration-1000';
-      breatheCore.style.borderColor = 'rgba(0, 240, 144, 0.4)';
+      breatheRing.className = 'absolute inset-0 rounded-full border-2 border-guide-pine/25 scale-100 transition-transform duration-1000';
+      breatheCore.style.borderColor = 'rgba(30, 73, 56, 0.4)';
       breatheInstruction.textContent = 'Drop your shoulders, unclamp your jaw, and let the counter pace your breath.';
     }
 
@@ -396,10 +396,10 @@
 
       if (phaseIndex === 0) {
         breatheRing.style.transform = 'scale(1.35)';
-        breatheRing.style.borderColor = '#00F090';
+        breatheRing.style.borderColor = '#1E4938';
       } else if (phaseIndex === 2) {
         breatheRing.style.transform = 'scale(0.9)';
-        breatheRing.style.borderColor = '#00D2FF';
+        breatheRing.style.borderColor = '#B26A48';
       }
 
       currentSeconds--;
